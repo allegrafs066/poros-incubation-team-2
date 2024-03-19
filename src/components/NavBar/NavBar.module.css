@@ -1,0 +1,40 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.cart {
+  background-color: burlywood;
+  padding: 10px 20px;
+  border-radius: 99px;
+  position: relative;
+  color: white;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  -ms-border-radius: 99px;
+  -o-border-radius: 99px;
+}
+
+.cartIndicator {
+  position: absolute;
+  background-color: tomato;
+  aspect-ratio: 1/1;
+  font-size: 10px;
+  height: 20px;
+  top: -7px;
+  right: -5px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99px;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  -ms-border-radius: 99px;
+  -o-border-radius: 99px;
+}
