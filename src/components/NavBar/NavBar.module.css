@@ -1,12 +1,11 @@
 .navContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Distributes items evenly with equal space between them */
   align-items: center;
-  padding: 0 10px;
   position: sticky;
   top: 0;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   z-index: 999; /* Ensures the navbar stays above other content */
 }
 
@@ -20,6 +19,14 @@
   -moz-border-radius: 99px;
   -ms-border-radius: 99px;
   -o-border-radius: 99px;
+}
+
+.home {
+  margin-left: 100px;
+}
+
+.cart {
+  margin-right: 100px;
 }
 
 .cartIndicator {
