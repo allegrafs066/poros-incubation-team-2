@@ -80,6 +80,7 @@ function CartPage() {
             Subtotal: ${calculateTotal().toFixed(2)}
           </div>
         )}
+        <button className={style.buttonCheckout}>Check out</button>
       </main>
     </MainLayout>
   );
