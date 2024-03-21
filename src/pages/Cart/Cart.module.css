@@ -89,3 +89,13 @@
   font-size: 18px;
   margin-top: 50px;
 }
+
+.subtotal {
+  display: flex;
+  justify-content: right;
+}
+
+.button {
+  display: flex;
+  justify-content: right;
+}
