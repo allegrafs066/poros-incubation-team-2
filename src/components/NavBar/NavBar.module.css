@@ -47,3 +47,23 @@
   -ms-border-radius: 99px;
   -o-border-radius: 99px;
 }
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.middleNav {
+  display: flex;
+  gap: 20px; /* Adjust the gap between links as needed */
+}
+
+.navItem {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Add any additional styles as needed */

@@ -1,0 +1,11 @@
+.brandingImage {
+    max-width: 100vw; /* Set maximum width to viewport width */
+    max-height: 100vh; /* Set maximum height to viewport height */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  

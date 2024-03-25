@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import style from "./HomePage.module.css";
 import api from "../../api";
-import ProductCard from "../../component/ProductCard";
-import MainLayout from "../../layout/MainLayout";
+import ProductCard from "../../components/ProductCard";
+import MainLayout from "../../layouts/MainLayout";
+import BrandingImage from "../../components/BrandingImage";
 
 function HomePage() {
   const [products, settingProduk] = useState([]);
@@ -52,6 +53,8 @@ function HomePage() {
 
   return (
     <MainLayout>
+      <BrandingImage />
+      <div className={style.bannerCaption}><h1>Check out what we have in store!</h1></div>
       <body className={style.badan}>
       <div className={style.tempat}>
         <div className={style.urut}>

@@ -5,7 +5,7 @@ function ProductCard(props) {
   const { image, title, price, id } = props.data;
 
   return (
-    <Link to={`product/${id}`} className={style.card}>
+    <Link to={`/product/${id}`} className={style.card}>
       <div className={style.gambarkontainer}>
         <img src={image} className={style.gambar} />
       </div>
@@ -15,6 +15,8 @@ function ProductCard(props) {
       </div>
     </Link>
   );
+
+  
 }
 
 export default ProductCard;

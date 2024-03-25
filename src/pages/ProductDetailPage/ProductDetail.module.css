@@ -1,0 +1,65 @@
+.container {
+    max-width: 800px; /* Limit container width */
+    margin: auto; /* Center container */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .product {
+    display: flex; /* Make product container a flex container */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center children horizontally */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+  .imageContainer {
+    width: 100%; /* Ensure image container takes up full width */
+    display: flex; /* Make image container a flex container */
+    justify-content: center; /* Center image horizontally */
+  }
+  
+  .image {
+    max-width: 25%; /* Set maximum width of image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing below image */
+  }
+  
+  h1 {
+    font-size: 24px; /* Increase heading font size */
+    margin-bottom: 10px; /* Add spacing below heading */
+  }
+  
+  p {
+    margin-bottom: 10px; /* Add spacing below paragraphs */
+  }
+  
+  .button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  
+  .recommendationsContainer {
+    max-width: 800px; /* Limit container width */
+    margin: auto; /* Center container horizontally */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the grid template columns */
+    grid-gap: 20px;
+    justify-content: center; /* Center items horizontally */
+    width: 100%; /* Ensure recommendations take up full width */
+  }
+  
