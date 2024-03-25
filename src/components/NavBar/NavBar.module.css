@@ -1,0 +1,49 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between; /* Distributes items evenly with equal space between them */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100vw;
+  z-index: 999; /* Ensures the navbar stays above other content */
+}
+
+.cart {
+  background-color: burlywood;
+  padding: 10px 20px;
+  border-radius: 99px;
+  position: relative;
+  color: white;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  -ms-border-radius: 99px;
+  -o-border-radius: 99px;
+}
+
+.home {
+  margin-left: 100px;
+}
+
+.cart {
+  margin-right: 100px;
+}
+
+.cartIndicator {
+  position: absolute;
+  background-color: tomato;
+  aspect-ratio: 1/1;
+  font-size: 10px;
+  height: 20px;
+  top: -7px;
+  right: -5px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99px;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  -ms-border-radius: 99px;
+  -o-border-radius: 99px;
+}
