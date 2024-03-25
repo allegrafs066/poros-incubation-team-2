@@ -14,6 +14,7 @@ function PromoSection() {
   return (
     <div className={style.promoSection}>
       <div className={style.container}>
+        <h1>Punya kode promo? Masukkan disini!</h1>
         <input
           type="text"
           value={promoCode}

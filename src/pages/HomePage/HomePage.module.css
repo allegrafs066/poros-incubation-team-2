@@ -25,11 +25,22 @@
   align-items: center;
   height: 100%;
   margin-top: 18px;
-  margin-bottom: 18px;
+
 }
 
 .bannerCaption h1 {
-  text-align: center; /* Center align the text */
+  text-align: center;
+  color: #191A19;
+}
+
+.welcomeBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 100%; /* Set maximum width to 100% */
+  overflow: hidden; /* Hide overflow content */
+  margin-bottom: 18px;
 }
 
 

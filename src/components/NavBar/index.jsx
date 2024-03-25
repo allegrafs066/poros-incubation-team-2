@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <nav className={style.navContainer}>
       <Link to={"/"} className={style.home}>
-        <h1>MyStore</h1>
+        <h1>TeamTwoStore</h1>
       </Link>
       <Link to={"/cart"} className={style.cart}>
         Cart

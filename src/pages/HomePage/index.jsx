@@ -54,6 +54,9 @@ function HomePage() {
   return (
     <MainLayout>
       <BrandingImage />
+      <div className={style.welcomeBanner}>
+        <img src="poros.png" alt="poros_banner" />
+      </div>
       <div className={style.bannerCaption}><h1>Check out what we have in store!</h1></div>
       <body className={style.badan}>
       <div className={style.tempat}>

@@ -5,7 +5,10 @@ function Footer() {
   return (
     <footer className={style.footer}>
       <div className={style.container}>
-        <p>© 2024 Your Company Name. All rights reserved.</p>
+        <p>© 2024 Final Project Poros - Team 2 <br /> 
+        <a href="https://github.com/allegrafs066">allegrafs066</a> | 
+        <a href="https://github.com/Khairuramdhani">Khairuramdhani</a> | 
+        <a href="https://github.com/riflnn">riflnn</a></p>
       </div>
     </footer>
   );
