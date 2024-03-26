@@ -4,11 +4,18 @@ import style from './PromoSection.module.css'; // Import CSS module for PromoSec
 function PromoSection() {
   const [promoCode, setPromoCode] = useState('');
   const [appliedPromoCode, setAppliedPromoCode] = useState('');
+  const [promoCodeError, setPromoCodeError] = useState('');
 
   const handleApplyPromoCode = () => {
-    // Apply promo code logic here (e.g., call an API to validate the promo code)
-    // For demonstration, we'll just set the applied promo code state
-    setAppliedPromoCode(promoCode);
+    if (promoCode.toLowerCase() === 'poros') {
+      setAppliedPromoCode(promoCode);
+      setPromoCodeError('');
+    } else {
+      setPromoCodeError('Kode promo tidak valid');
+      // Apply promo code logic here (e.g., call an API to validate the promo code)
+      // For demonstration, we'll just set the applied promo code state
+       // Clear any previous error message
+    }
   };
 
   return (
@@ -25,6 +32,7 @@ function PromoSection() {
         <button onClick={handleApplyPromoCode} className={style.button}>
           Apply
         </button>
+        {promoCodeError && <p className={style.error}>{promoCodeError}</p>}
         {appliedPromoCode && (
           <p className={style.appliedCode}>Promo code "{appliedPromoCode}" applied!</p>
         )}
