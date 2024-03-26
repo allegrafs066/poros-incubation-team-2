@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import MainLayout from "../../layouts/MainLayout";
 import GlobalContext from "../../context/GlobalContext";
 import style from "./Cart.module.css";
@@ -34,10 +34,18 @@ function CartPage() {
   const calculateTotal = () => {
     let total = 0;
     cartProducts.forEach((product) => {
-      total += product.price * (quantities[product.id] || 0); // Multiply price by quantity
+      total += product.price * Math.max(quantities[product.id] || 0, 1); // Multiply price by quantity (at least 1)
     });
     return total;
   };
+
+  // State to store the subtotal
+  const [subtotal, setSubtotal] = useState(calculateTotal());
+
+  // Update subtotal whenever quantities change
+  useEffect(() => {
+    setSubtotal(calculateTotal());
+  }, [quantities, cartProducts]);
 
   return (
     <MainLayout>
@@ -56,7 +64,7 @@ function CartPage() {
                 <div className={style.counter}>
                   <input
                     type="number"
-                    min="0"
+                    min="1"
                     value={quantities[product.id] || 1}
                     onChange={(e) =>
                       updateQuantity(product.id, parseInt(e.target.value))
@@ -77,7 +85,7 @@ function CartPage() {
         )}
         {cartProducts.length > 0 && ( // Display subtotal only if there are items in the cart
           <div className={style.subtotal}>
-            Subtotal: ${calculateTotal().toFixed(2)}
+            Subtotal: ${subtotal.toFixed(2)}
           </div>
         )}
         <button className={style.buttonCheckout}>Check out</button>
